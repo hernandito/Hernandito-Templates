@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>CloudCommander-HR</Name>
-  <Repository>coderaiser/cloudcmd</Repository>
+  <Repository>solipsist01/cloudcommander</Repository>   
   <Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -44,11 +44,6 @@ Set Mount Point to the directory you want to be able to access in the browser. D
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/cloudcmd/src</HostDir>
-      <ContainerDir>/usr/src/app</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>	
-    <Volume>
       <HostDir>/mnt/user/appdata/cloudcmd</HostDir>
       <ContainerDir>/root</ContainerDir>
       <Mode>rw</Mode>
@@ -76,7 +71,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
   <Config Name="Host Path 2" Target="/usr/src/app" Default="" Mode="rw" Description="Container Path: /usr/src/app" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cloudcmd/src/</Config>
 
   <Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/</Config>
-
+	<Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   
   <Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="advanced" Required="true" Mask="false">/root</Config>
 </Container>
