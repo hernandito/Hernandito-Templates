@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
+  <Support></Support>
   <Project/>
   <Overview>
 CloudCommander is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]
@@ -28,20 +28,14 @@ Set Mount Point to the directory you want to be able to access in the browser. D
   <DonateLink/>
   <Description>&#xD;
 [b]CloudCommander[/b] is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]&#xD;
-[br/]&#xD;
-[b]Instructions:[/b][br/]&#xD;
+&#xD;
+]Instructions:&#xD;
 Set Port to the port you want to be able to access from. Defaults to 8765[br/]&#xD;
 Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares[br/]&#xD;
 	</Description>
   <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8765</HostPort>
-        <ContainerPort>8000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Mode>br0</Mode>
+    <Publish/>
   </Networking>
   <Data>
     <Volume>
