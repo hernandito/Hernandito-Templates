@@ -11,7 +11,7 @@
   <Project/>
   <Overview>
 CloudCommander is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]
-[br/]
+
 [b]Instructions:[/b][br/]
 Set Port to the port you want to be able to access from. Defaults to 8765[br/]
 Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares[br/]
