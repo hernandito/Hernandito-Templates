@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>CloudCommander</Name>
-  <Repository>solipsist01/cloudcommander</Repository>   
+  <Repository>hernandito/cloudcommander</Repository>   
   <Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
   <Network>bridge</Network>
   <MyIP/>
