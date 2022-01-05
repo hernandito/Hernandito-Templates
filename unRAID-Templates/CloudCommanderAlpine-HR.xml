@@ -19,7 +19,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/cloudcmd.xml</TemplateURL>
-  <Icon>https://i.imgur.com/beldEJr.png</Icon>
+  <Icon>https://i.imgur.com/bAKpapC.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
