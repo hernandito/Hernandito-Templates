@@ -50,6 +50,13 @@ Set Mount Point to the directory you want to be able to access in the browser. D
       <Mode>rw</Mode>
     </Volume>
 
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudcmd/dist</HostDir>
+      <ContainerDir>/usr/src/app/dist</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+
+
   </Data>
    <Environment/>
     <Variable>
