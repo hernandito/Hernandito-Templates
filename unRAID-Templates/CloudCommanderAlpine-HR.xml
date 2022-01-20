@@ -10,7 +10,7 @@
   <Support></Support>
   <Project/>
   <Overview>
-CloudCommander is a simple web file browser with a built in text editor and archive compress/extract abilities. This version has been formatted to use the Alpine base. It also has a modified, modern WebUI.
+CloudCommander Hernandito is a simple web file browser with a built in text editor and archive compress/extract abilities. This version has been formatted to use the Alpine base. It also has a modified, modern WebUI.
 
 
 Instructions:
@@ -58,7 +58,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/appdata/cloudcmd</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/root</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
