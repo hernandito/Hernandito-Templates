@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>CloudCommander</Name>
+  <Name>CloudCommander-HR</Name>
   <Repository>solipsist01/cloudcommander</Repository>   
   <Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
   <Network>bridge</Network>
@@ -10,7 +10,7 @@
   <Support></Support>
   <Project/>
   <Overview>
-CloudCommander is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]
+CloudCommander Hernandito is a simple web file browser with a built in text editor and archive compress/extract abilities.[br/]
 
 [b]Instructions:[/b][br/]
 Set Port to the port you want to be able to access from. Defaults to 8765[br/]
