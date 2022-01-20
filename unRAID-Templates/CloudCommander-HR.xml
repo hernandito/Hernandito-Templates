@@ -56,8 +56,8 @@ Set Mount Point to the directory you want to be able to access in the browser. D
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   
 
-	<Config Name="appdata" Target="/root" Default="/mnt/user/appdata/cloudcmd" Mode="rw" Description="Medusa config" Type="Path" Display="advanced" Required="true" Mask="false"/>
-	<Config Name="Dist" Target="/usr/src/app/dist/" Default="/mnt/user/appdata/cloudcmd/dist" Mode="rw" Description="Dist folder, where CSS, HTML goes" Type="Path" Display="advanced" Required="true" Mask="false"/>
+<Config Name="appdata" Target="/root" Default="/mnt/user/appdata/cloudcmd" Mode="rw" Description="Medusa config" Type="Path" Display="advanced" Required="true" Mask="false"/>
+<Config Name="Dist" Target="/usr/src/app/dist/" Default="/mnt/user/appdata/cloudcmd/dist" Mode="rw" Description="Dist folder, where CSS, HTML goes" Type="Path" Display="advanced" Required="true" Mask="false"/>
 
 <Config Name="Mount Path" Target="/UNRAID" Default="/" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">
 <Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
