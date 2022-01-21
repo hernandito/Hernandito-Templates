@@ -56,33 +56,22 @@ Set Mount Point to the directory you want to be able to access in the browser. D
       <ContainerDir>/UNRAID</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-     <Volume>
-      <HostDir>/mnt/cache/appdata/cloudcmd2/</HostDir>
-      <ContainerDir>/config</ContainerDir>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/cloudcmd2</HostDir>
+      <ContainerDir>//config</ContainerDir>
       <Mode>rw</Mode>
-    </Volume> 	
-
+    </Volume>
   </Data>
-   <Environment/>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
+
 
   <Labels/>
     <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
 	<Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-	<Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="always" Required="true" Mask="false">/root</Config>	
+
 	
+	<Config Name="Theroot" Target="/config" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/cloudcmd2</Config>
 	<Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/</Config>
-	<Config Name="Mount Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/cloudcmd2</Config>	
-	
+	<Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="always" Required="true" Mask="false">/root</Config>	
 	<Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
 
 
