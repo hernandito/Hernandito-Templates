@@ -31,7 +31,7 @@ sh /root/update.sh
 	</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/hernandito/Hernandito-Templates/main/unRAID-Templates/CloudCommander-HR.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/cloudcmd.xml</TemplateURL>
   <Icon>https://i.imgur.com/Ng2rkTL.png</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -48,13 +48,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 	</Description>
   <Networking>
     <Mode>br0</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8000</HostPort>
-        <ContainerPort>8000</ContainerPort>
-        <Protocol></Protocol>
-      </Port>
-    </Publish>
+    <Publish/>
   </Networking>
   <Data>
     <Volume>
@@ -80,11 +74,17 @@ Set Mount Point to the directory you want to be able to access in the browser. D
       <Name>PGID</Name>
       <Mode/>
     </Variable>
-    <Variable>
-      <Value>/root</Value>
-      <Name>HOME - Dont Change!</Name>
-      <Mode/>
-    </Variable>
+
   <Labels/>
+    <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+	<Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+	<Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="always" Required="true" Mask="false">/root</Config>	
+	
+	<Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/</Config>
+	<Config Name="Mount Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/cloudcmd2</Config>	
+	
+	<Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+
+
 	
 </Container>
