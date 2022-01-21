@@ -69,7 +69,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 	<Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
 
 	
-	<Config Name="Config" Target="/config" Default="/mnt/cache/appdata/cloudcmd2" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/cloudcmd2</Config>
+	<Config Name="Config" Target="/config" Default="/mnt/cache/appdata/cloudcmd" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/cloudcmd</Config>
 	<Config Name="Mount Path" Target="/UNRAID" Default="/" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/</Config>
 	<Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="always" Required="true" Mask="false">/root</Config>	
 	<Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
