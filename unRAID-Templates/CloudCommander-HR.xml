@@ -28,6 +28,9 @@ You can customize the buttons on the WebUI by going to your CloudCommander's app
 "update.sh"
 
 
+You will need to re-start your CloudCommander docker to see your changes.
+
+
 	</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
